@@ -1,1 +1,113 @@
-4
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    /* The width of an element will be the size of its border box,
+       not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* == END RESET =========================================== */
+body {
+    background-color: #f4f4f4;
+    line-height: 1.5;
+    color: #444444;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* COLOUR & BORDERS SCHEME */
+
+header {
+    width: 100%;
+}
+
+header > div, header > h1 {
+    font-family: Verdana;
+    text-align: center;
+    color: #000;
+}
+
+nav {
+    width: 100%;
+}
+
+main {
+
+}
+
+aside {
+    color: #ffffff;
+    width: 100%;
+}
+
+footer {
+    background-color: #444444;
+    color: #ffffff;
+    width: 100%;
+}
+
+h1 {
+    font-family: OpenSans;
+}
+
+
+#logo {
+    width: auto;
+}
+
+.advert{
+    margin: 0.5rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+footer p{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 67rem){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    header {
+       grid-column: 1 / 4;
+    }
+}
+
+/* desktop apperance @media
+body {
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+header {
+   grid-column: 1 / 4;
+}
+
+footer {
+   grid-column: 1 / 4;
+}
+
+.container {
+  display: flex;
+}
+*/
