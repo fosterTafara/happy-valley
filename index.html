@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +8,30 @@
     <meta name="keywords" content="Horses, Riding, After school activities, Holiday activities, Happy Valley Riding School, kid activities, Christchurch">
     <title>Home - Happy Valley Riding School</title>
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/navigation.js"></script>
 </head>
-
 <body>
-
     <header>
         <div>
             <img src="images/logo.png" id="logo" alt="happy valley riding school logo"/>
         </div>
-        <!--remember width 100% css-->
-        <h1>Happy Valley Riding School</h1>
+        <div class="center">
+            <h1>Happy Valley Riding School</h1>
+        </div>
+        <span id="menu-button" onclick="openNav()">&#9776;</span>
     </header>
 
-    <nav>
-        <ul class="flex-menu">
-            <!--make hamburger not-->
-            <li><a href="#">After School</a></li>
-            <li><a href="#">Sunday Lessons</a></li>
-            <li><a href="#">Holiday Program</a></li>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="#">Home</a></li>            
+            <li><a href="#">Lessons</a></li>
             <li><a href="#">Fun Activities</a></li>
             <li><a href="#">Photo Gallery</a></li>
             <li><a href="#">Horse Showing</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
+        <span id="close-button" onclick="closeNav()">&times;</span>
     </nav>
 
     <main id="cards">
@@ -41,7 +40,7 @@
                 <div>
                     <img src="images/afterschoolprogram.jpg" alt="image advertising horse" />
                 </div>
-                <h2>After School Lessons</h2>
+                <h2>Weekday Lessons</h2>
                 <p>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
                     officia deserunt mollitia animi, id est laborum et dolorum fuga.
@@ -69,13 +68,13 @@
             </section>
         </div>
     </main>
+
+
     <footer>
         <p>
             Copyright &copy; Plato Creative, Christchurch, New Zealand. All rights Reserved. Terms and Conditions Privacy Policy | 03-555-999
         </p>
     </footer>
 
-
 </body>
-
 </html>

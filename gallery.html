@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#">
-    <meta name="description" content="Happy Valley Riding School provides the best Horse Riding experiences in all of Christchurch for kids. We offer a number of activities from horse riding, bonding and horse cleaning">
+    <meta name="description" content="Gallery of Happy Valley Riding School experiences.">
     <meta name="keywords" content="Horses, Riding, After school activities, Holiday activities, Happy Valley Riding School, kid activities, Christchurch">
-    <title>Home - Happy Valley Riding School</title>
+    <title>Gallery - Happy Valley Riding School</title>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/flexslider.css">
@@ -26,33 +26,47 @@
         <div>
             <img src="images/logo.png" id="logo" alt="happy valley riding school logo"/>
         </div>
-        <h1>Happy Valley Riding School</h1>
+        <div class="center">
+            <h1>Happy Valley Riding School</h1>
+        </div>
+        <span id="menu-button" onclick="openNav()">&#9776;</span>
     </header>
 
-    <nav>
-        <ul class="flex-menu">
-            <li><a href="#">After School Lessons</a></li>
-            <li><a href="#">Sunday Lessons</a></li>
-            <li><a href="#">Holiday Program</a></li>
+    <nav id="main-menu"> <!-- This ID is important - CSS and JavaScript target it -->
+        <ul>
+            <li><a href="#">Lessons</a></li>
             <li><a href="#">Fun Activities</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Photo Gallery</a></li>
             <li><a href="#">Horse Showing</a></li>
-            <li><a href="#">Contact/About Us</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
+        <span id="close-button" onclick="closeNav()">&times;</span>
     </nav>
 
     <main>
+        <h2>
+            Happy Valley Photo Gallery
+        </h2>
         <div class="flexslider">
     	  <ul class="slides">
     	    <li>
-    	      <img src="images/image-1.jpg"/>
+    	      <img src="images/gallery/image-1.jpg" alt="horse feeding"/>
     	    </li>
     	    <li>
-    	      <img src="images/image-2.jpg" />
+    	      <img src="images/gallery/image-2.jpg" alt="horse bucking"/>
     	    </li>
     	    <li>
-    	      <img src="images/image-3.jpg" />
+    	      <img src="images/gallery/image-3.jpg" alt="horse patting"/>
     	    </li>
+            <li>
+              <img src="images/gallery/image-4.jpg" alt="horse galloping"/>
+            </li>
+            <li>
+              <img src="images/gallery/image-5.jpg" alt="horse brushing"/>
+            </li>
+            <li>
+              <img src="images/gallery/image-6.jpg" alt="horse in stable"/>
+            </li>
     	  </ul>
     	</div>
     </main>

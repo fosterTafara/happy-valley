@@ -13,151 +13,296 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
     box-sizing: border-box;
 }
 
-/* == END RESET =========================================== */
-body {
-    background-color: #f4f4f4;
-    line-height: 1.5;
-    color: #444444;
+ul, ol {
+    list-style-position: inside;
 }
+
+
+/* DEFAULT LAYOUT IS SINGLE COLUMN */
+
+header, footer {
+    padding: 0.5em;
+}
+
+main, aside {
+    padding: 1em 0.5em;
+}
+
+main li {
+    margin-bottom: 0.5em;
+}
+
 
 img {
     width: 100%;
 }
 
-
-
-/* COLOUR & BORDERS SCHEME */
-
-header {
-    width: 100%;
+#logo {
+width: auto;  /* Ask Chris */
 }
 
-header > div, header > h1 {
-    font-family: Verdana;
-    text-align: center;
+header{
+text-align: center; /* Ask Chris */
+}
+
+form > div {
+margin-bottom: 1.5em;
+}
+
+/* MAIN MENU */
+
+#main-menu ul {
+    list-style-type: none;
+	white-space: nowrap;
+}
+
+#main-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 2em;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 2.75em;
+    transition: 0.5s;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    line-height: 1.2;
+    border-bottom: 1px solid #fff;
+}
+
+#main-menu a {
+    display: block;
+    padding: 0.5em 0.5em 0.5em 2em;
+    font-size: 1.25em;
     color: #000;
 }
 
-nav {
-    width: 100%;
+#menu-button, #close-button {
+    cursor: pointer;
+    line-height: 1;
 }
 
-main {
-
+#menu-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.8rem;
 }
 
-aside {
-    color: #ffffff;
-    width: 100%;
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+
+
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    line-height: 1.5;
+}
+
+h1, h2, p {
+    margin-bottom: 1em;
+}
+
+#site-title {
+    margin-bottom: 0;
+}
+
+#site-title, h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
 }
 
 footer {
-    background-color: #444444;
-    color: #ffffff;
-    width: 100%;
-}
-
-h1 {
-    font-family: OpenSans;
-}
-
-
-#logo {
-    width: auto;
-}
-
-.advert{
-    margin: 0.5rem;
-}
-
-h3{
     text-align: center;
-    font-size: 1.5rem;
-    color: #000;
 }
 
-footer p{
-    text-align: center;
-    padding: 0.5rem;
+
+/* COLOUR SCHEME */
+
+
+body{
+    background-color: #F1F1EF;
 }
 
-@media screen and (min-width: 50rem){
+
+header {
+    background-color: #5DAA68;
+    color: #FAF1CF;
+    text-shadow: 3px 3px black
+}
+
+#main-menu {
+    background-color: #3F6844;
+}
+
+#main-menu a, #close-button {
+    color: #fff;
+}
+
+#main-menu li.current {
+    background-color: #0d4420;
+}
+
+#main-menu li:hover {
+	background-color: #000;
+}
+
+
+
+footer {
+    background-color: #3F6844;
+    color: #fff;
+}
+
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 60rem) {
+
+    header {
+        display: flex;
+    }
+
+    .center{
+        margin: auto;
+    }
+
+
     body {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
     }
 
-    header  {
-       grid-column: 1 / 5;
-        background-color: red;
-    }
-
-    footer  {
-       grid-column: 1 / 5;
-        background-color: green;
-    }
-
-    nav{
-        grid-column: 2 /3;
-        background-color: blue;
-    }
-
-    main {
+    header {
         grid-column: 2 / 3;
     }
 
-    .flex-menu {
+    #main-menu {
+        grid-column: 2 / 3;
+    }
+
+    main {
+        grid-column: 2/3;
+    }
+
+
+    footer {
+        grid-column: 2 / 3;
+    }
+
+
+    /* MAIN MENU */
+
+    #main-menu ul {
         display: flex;
-        flex-direction: row;
+          justify-content: center;
+    }
+
+        /* Override Mobile Menu */
+    #main-menu {
+        position: static;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        transition: none;
+        padding-top: 0;
+    }
+
+    #main-menu li {
+        border: 0;
+    }
+
+    #main-menu a {
+        font-size: 1em;
+        padding:5px 7px;
+    }
+
+    #menu-button, #close-button {
+        display: none;
     }
 
     .container-cards {
-        display: flex;
+    display: flex;
     }
 
-    ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
-    }
-
-    li a {
-      display: block;
-      color: #000;
-      text-decoration: none;
-      text-align: center;
-      padding: 14px;
-    }
-
-    li a:hover {
-      background-color: #555;
-      color: white;
+    .advert{
+        width: 100%;
+        margin: 0.5rem;
+        padding: 0.2em;
     }
 
     img {
-        width: 100%;
+    width: 100%;
+    }
+
+
+    #logo {
+    width: auto;  /* Ask Chris */
+    }
+
+    section > p{
+        padding: 0em 0.5em;
+    }
+
+    form > div {
+    margin-bottom: 1.5em;
+    }
+
+
+
+
+    /* TYPOGRAPHY */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #profile {
+        display: flex;
+    }
+
+    #profile > div, #profile > p {
+    flex: 1;
+    flex-basis: 25%;
+    margin: 1rem;
+    padding: 0em 1em;
+    }
+
+
+    h2, footer {
+        text-align: center;
     }
 
 }
-
-/* desktop apperance @media
-body {
-    background-color: #f4f4f4;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-header {
-   grid-column: 1 / 4;
-}
-
-footer {
-   grid-column: 1 / 4;
-}
-
-.container {
-  display: flex;
-}
-*/
