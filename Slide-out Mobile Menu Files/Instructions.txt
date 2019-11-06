@@ -1,0 +1,12 @@
+1. Hamburger icon - add to the end of the <header>
+    <span id="menu-button" onclick="openNav()">&#9776;</span>
+    
+2. Close button - add to end of <nav> (after the <ul>)
+    <span id="close-button" onclick="closeNav()">&times;</span>
+    
+3. Link to this script file at the end of <head>:
+    navigation.js
+    
+4. Copy the CSS from the "CSS for Mobile Menu" file into the "MAIN MENU" CSS section that creates the single-column layout.
+
+5. Copy the CSS from the "CSS for Wide Window" file into the "MAIN MENU" CSS section in the media query that creates the wider (two-column) layout.

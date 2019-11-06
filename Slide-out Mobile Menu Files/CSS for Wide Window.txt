@@ -1,0 +1,22 @@
+/* Override Mobile Menu */
+/* Turn the main menu into "normal" navigation */
+#main-menu {
+    position: static; /* Override the positioning set for mobile menu - "static" is the "normal" value */
+    width: 100% !important; /* Overrides the zero width for mobile menu, so the menu will appear */
+    max-width: 100%;  /* In case the max-width is (optionally) set for mobile menu, override it here */
+    height: auto;
+    transition: none;
+    padding-top: 0;
+}
+
+#main-menu li {
+    border: 0; /* Remove the bottom border for a horizontal menu */
+}
+
+#main-menu a {
+    padding-right: 2em; /* Overrides padding set for the mobile menu */
+}
+
+#menu-button, #close-button {
+    display: none; /* Hide the main menu open and close controls */
+}
