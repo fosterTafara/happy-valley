@@ -44,30 +44,47 @@
         <p>
             Either contact us using the form below, or give us a call 0800 HAPPYVALLEY.
         </p>
-        <form action="mailto:bob@bogus.com" method="POST">
+        <div>
+            <form action="mailto:bob@bogus.com" method="POST">
 
-            <div>
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div>
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="phone">Phone <span class="required">*</span></label>
-                <input type="text" id="phone" name="phone" required>
-            </div>
-
-            <div>
-                <label for="enquiry">Enquiry</label>
-                <textarea rows="4" cols="50" name="comment" id="enquiry" placeholder="Enter text here..."></textarea>
-            </div>
-            <input type="submit">
-        </form>
-
+            <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="First name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Last name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="phone" name="phonenumber" placeholder="Phone number">
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="enquiry">Enquiry</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="enquiry" name="enquirybox" placeholder="..." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+        </div>
     </main>
     <footer>
         <p>

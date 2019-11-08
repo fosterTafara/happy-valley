@@ -183,6 +183,47 @@ footer {
 }
 
 
+/*Form*/
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.col-25, .col-75, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+
+
+
 /* RESPONSIVENESS */
 
 @media screen and (min-width: 60rem) {
@@ -223,7 +264,7 @@ footer {
 
     #main-menu ul {
         display: flex;
-          justify-content: center;
+        justify-content: center;
     }
 
         /* Override Mobile Menu */
@@ -257,6 +298,8 @@ footer {
         width: 100%;
         margin: 0.5rem;
         padding: 0.2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
 
     img {
@@ -304,5 +347,37 @@ footer {
     h2, footer {
         text-align: center;
     }
+    
+    /*Forms*/
+    .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    }
+
+    .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+    
+    input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    }
+    
+    /*Video*/
+    
+    .center {
+     margin: auto;   
+    }
+    
 
 }
+
+
