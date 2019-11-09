@@ -16,7 +16,7 @@ ul, ol {
     list-style-position: inside;
 }
 
-/* DEFAULT LAYOUT IS SINGLE COLUMN */
+/*Mobile View*/
 header, footer {
     padding: 0.5em;
 }
@@ -237,6 +237,10 @@ video {
     padding: 0 1em;
 }
 
+.lessons, .form{
+    padding: 1em 1em;
+}
+
 
 
 /* RESPONSIVENESS */
@@ -355,7 +359,7 @@ video {
 */
 
 
-    h2, footer {
+    h2, footer, h3 {
         text-align: center;
     }
 
@@ -394,5 +398,5 @@ video {
     }
 
     /*dropdown*/
-    
+
 }
