@@ -7,7 +7,7 @@
     <meta name="author" content="#">
     <meta name="description" content="Happy Valley Riding School provides the best Horse Riding experiences in all of Christchurch for kids. We offer a number of activities from horse riding, bonding and horse cleaning">
     <meta name="keywords" content="Horses, Riding, After school activities, Holiday activities, Happy Valley Riding School, kid activities, Christchurch">
-    <title>Home - Happy Valley Riding School</title>
+    <title>Weekday Lessons - Happy Valley Riding School</title>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/navigation.js"></script>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div>
-            <img src="images/logo.png" id="logo" alt="happy valley riding school logo" />
+            <img src="images/horselogo.png" id="logo" alt="happy valley riding school logo" />
         </div>
         <div class="center">
             <h1>Happy Valley Riding School</h1>
@@ -30,7 +30,7 @@
             <li><a href="#">Lessons</a></li>
             <li><a href="funactivities.html">Fun Activities</a></li>
             <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="horse_showing.html">Horse Showing</a></li>
+            <li><a href="horse-showing.html">Horse Showing</a></li>
             <li><a href="about-us.html">About Us</a></li>
         </ul>
         <span id="close-button" onclick="closeNav()">&times;</span>
@@ -40,8 +40,11 @@
         <h2>
             Weekday Lessons
         </h2>
-
-        <p class="lessons"><img src="images/horse.jpg" alt="horse in the sun">
+        <div id="profile">
+            <div>
+                <img src="images/horseweek.jpg" alt="horse in the sun"/>
+            </div>
+        <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
             nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
             massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
@@ -50,8 +53,8 @@
             Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam
             velit.
         </p>
-        <h3 class="form">
-            Book Here
+        <h3>
+            Book Weekday Lessons Here
         </h3>
         <div class="form">
             <form action="mailto:bob@bogus.com" method="POST">
@@ -82,10 +85,18 @@
               </div>
               <div class="row">
                 <div class="col-25">
-                  <label for="enquiry">Enquiry</label>
+                  <label for="date">Date</label>
                 </div>
                 <div class="col-75">
-                  <textarea id="enquiry" name="enquirybox" placeholder="..." style="height:200px" required></textarea>
+                    <input type="date" id="date" name="date" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="time">Time</label>
+                </div>
+                <div class="col-75">
+                    <input type="time" id="time" name="time" required>
                 </div>
               </div>
               <div class="row">
