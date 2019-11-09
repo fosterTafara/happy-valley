@@ -1,5 +1,4 @@
 /* RESET */
-
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     /* Cancel out some differences between browser defaults */
     margin: 0;
@@ -17,9 +16,7 @@ ul, ol {
     list-style-position: inside;
 }
 
-
 /* DEFAULT LAYOUT IS SINGLE COLUMN */
-
 header, footer {
     padding: 0.5em;
 }
@@ -32,28 +29,32 @@ main li {
     margin-bottom: 0.5em;
 }
 
-
 img {
     width: 100%;
 }
 
 #logo {
-width: auto;  /* Ask Chris */
+    width: auto;
+    /* Ask Chris */
 }
 
-header{
-text-align: center; /* Ask Chris */
+header {
+    text-align: center;
+    /* Ask Chris */
 }
 
-form > div {
-margin-bottom: 1.5em;
+form>div {
+    margin-bottom: 1.5em;
+}
+
+.advert {
+    padding: 1rem;
 }
 
 /* MAIN MENU */
-
 #main-menu ul {
     list-style-type: none;
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 #main-menu a {
@@ -75,7 +76,7 @@ margin-bottom: 1.5em;
 }
 
 #main-menu ul {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 #main-menu li {
@@ -110,17 +111,12 @@ margin-bottom: 1.5em;
     padding: 0;
 }
 
-
-
-
-
 /* TYPOGRAPHY */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
     line-height: 1.5;
 }
 
@@ -138,20 +134,22 @@ h1, h2, p {
 
 h2 {
     font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.title {
+    padding: 0rem;
+    border-bottom: 0.1rem solid black;
 }
 
 footer {
     text-align: center;
 }
 
-
 /* COLOUR SCHEME */
-
-
-body{
+body {
     background-color: #F1F1EF;
 }
-
 
 header {
     background-color: #5DAA68;
@@ -172,70 +170,86 @@ header {
 }
 
 #main-menu li:hover {
-	background-color: #000;
+    background-color: #FAB162;
 }
-
-
 
 footer {
     background-color: #3F6844;
     color: #fff;
 }
 
-
 /*Form*/
-
 input[type=text], select, textarea {
-width: 100%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
 label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
-
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
-
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+
+/*Video*/
+video {
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+}
+
+#para-activities {
+    padding: 0 1rem;
+}
+
+.flex-prev, .flex-next {
+    line-height: normal;
+}
+
+#profile>p {
+    padding: 1em 1em;
 }
 
 
-.col-25, .col-75, input[type=submit] {
-width: 100%;
-margin-top: 0;
+#profile>div {
+    padding: 0 1em;
 }
 
 
 
 /* RESPONSIVENESS */
-
 @media screen and (min-width: 60rem) {
 
     header {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 4fr
     }
 
-    .center{
-        margin: auto;
+    h1 {
+        padding: 1.5rem 8rem 0 0;
     }
-
 
     body {
         display: grid;
@@ -254,20 +268,21 @@ margin-top: 0;
         grid-column: 2/3;
     }
 
-
     footer {
         grid-column: 2 / 3;
     }
 
+    #para-activities {
+        padding: 0 1rem;
+    }
 
     /* MAIN MENU */
-
     #main-menu ul {
         display: flex;
         justify-content: center;
     }
 
-        /* Override Mobile Menu */
+    /* Override Mobile Menu */
     #main-menu {
         position: static;
         width: 100% !important;
@@ -283,7 +298,7 @@ margin-top: 0;
 
     #main-menu a {
         font-size: 1em;
-        padding:5px 7px;
+        padding: 5px 7px;
     }
 
     #menu-button, #close-button {
@@ -291,39 +306,34 @@ margin-top: 0;
     }
 
     .container-cards {
-    display: flex;
+        display: flex;
     }
 
-    .advert{
+    .advert {
         width: 100%;
         margin: 0.5rem;
         padding: 0.2em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
     }
 
     img {
-    width: 100%;
+        width: 100%;
     }
-
 
     #logo {
-    width: auto;  /* Ask Chris */
+        width: auto;
+        /* Ask Chris */
     }
 
-    section > p{
+    section>p {
         padding: 0em 0.5em;
     }
 
-    form > div {
-    margin-bottom: 1.5em;
+    form>div {
+        margin-bottom: 1.5em;
     }
 
-
-
-
     /* TYPOGRAPHY */
-
     h1 {
         font-size: 2rem;
     }
@@ -332,52 +342,57 @@ margin-top: 0;
         font-size: 1.5rem;
     }
 
+/*
     #profile {
         display: flex;
     }
 
-    #profile > div, #profile > p {
-    flex: 1;
-    flex-basis: 25%;
-    margin: 1rem;
-    padding: 0em 1em;
+    #profile>div, #profile>p {
+        flex: 1;
+        margin: 1rem;
+        padding: 0em 1em;
     }
+*/
 
 
     h2, footer {
         text-align: center;
     }
-    
+
     /*Forms*/
     .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+        float: left;
+        width: 25%;
+        margin-top: 6px;
     }
 
     .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+        float: left;
+        width: 75%;
+        margin-top: 6px;
     }
-    
+
     input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
     }
-    
+
     /*Video*/
-    
-    .center {
-     margin: auto;   
+    video {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0.5rem 0;
     }
+
+    .flex-prev, .flex-next {
+        line-height: normal;
+    }
+
+    /*dropdown*/
     
-
 }
-
-
